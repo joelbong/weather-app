@@ -11,7 +11,8 @@ function forecast({longitude, latitude}, callback) {
         } else {
             callback(undefined, {
                 temperature: body.currently.temperature,
-                humidity: body.currently.humidity
+                humidity: body.currently.humidity,
+                summary: body.currently.summary
             });
         };
     });

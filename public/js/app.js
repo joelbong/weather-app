@@ -11,7 +11,7 @@ weatherForm.addEventListener('submit', (event) => {
                 if (data.error) {
                     message.innerHTML = data.error;
                 } else {
-                    message.innerHTML = `In ${data.location}, temperature is ${data.temperature}° and humidity ${data.humidity}`;
+                    message.innerHTML = `In ${data.location}, temperature is ${data.temperature}° and humidity ${data.humidity}. ${data.summary}`;
                 }
         })
 })
